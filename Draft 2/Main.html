@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Foodies Hub</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#menu-section">Menu</a></li>
+               
+                <li><a href="#contact-section">Contact Us</a></li>
+                <li><button id="cart-button">Cart (<span id="cart-count">0</span>) - $<span id="cart-total">0.00</span></button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Foodies Hub</h2>
+            <p>Your favorite food, delivered right to your doorstep</p>
+        </div>
+    </section>
+
+    <main>
+
+        <h2>Our Menu</h2>
+        <!-- Menu Section -->
+        <section id="menu-section" class="menu">
+            
+            <div class="menu-items">
+                <!-- Menu Items -->
+                <div class="menu-item">
+                    <img src="https://img.freepik.com/premium-photo/aesthetic-dripping-tasty-pizza-slice-generative-ai_863013-1973.jpg" alt="Pizza">
+                    <div class="item-details">
+                        <h3>Pizza</h3>
+                        <p>Delicious cheese pizza</p>
+                        <span class="price">$12.99</span>
+                        <button class="add-to-cart" data-id="1" data-name="Pizza" data-price="12.99">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://i.pinimg.com/originals/2b/b8/52/2bb8528e8a7b3b0fe4c534c3a0595241.jpg" alt="Burger">
+                    <div class="item-details">
+                        <h3>Burger</h3>
+                        <p>Juicyburger </p>
+                        <span class="price">$8.99</span>
+                        <button class="add-to-cart" data-id="2" data-name="Burger" data-price="8.99">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://www.fabmood.com/wp-content/uploads/2023/07/pasta-aesthetic-12-410x580.jpg" alt="Pasta">
+                    <div class="item-details">
+                        <h3>Pasta</h3>
+                        <p>Italian style pasta</p>
+                        <span class="price">$10.49</span>
+                        <button class="add-to-cart" data-id="3" data-name="Pasta" data-price="10.49">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://i.pinimg.com/originals/54/67/c8/5467c8b89a1788dab7b116f475df869e.jpg" alt="French Fries">
+                    <div class="item-details">
+                        <h3>French Fries</h3>
+                        <p>Crispy and golden fries</p>
+                        <span class="price">$3.99</span>
+                        <button class="add-to-cart" data-id="4" data-name="French Fries" data-price="3.99">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://i.pinimg.com/originals/9b/83/6b/9b836bda4f60761735d6fdd869b04a85.jpg" alt="Paneer Grilled Sandwich">
+                    <div class="item-details">
+                        <h3>Paneer Grilled Sandwich</h3>
+                        <p>Grilled sandwich with paneer filling</p>
+                        <span class="price">$7.99</span>
+                        <button class="add-to-cart" data-id="5" data-name="Paneer Grilled Sandwich" data-price="7.99">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://www.mygingergarlickitchen.com/wp-content/uploads/2021/08/peanut-butter-and-veggie-grilled-cheese-sandwich-3.jpg" alt="Veg Grilled Sandwich">
+                    
+                    
+                    <div class="item-details">
+                        <h3>Veg Grilled Sandwich</h3>
+                        <p>Grilled sandwich with mixed veggies</p>
+                        <span class="price">$6.49</span>
+                        <button class="add-to-cart" data-id="6" data-name="Veg Grilled Sandwich" data-price="6.49">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://www.newsmagnify.com/wp-content/uploads/2022/01/masala-dosa-recipe.jpg" alt="Masala Dosa">
+                    <div class="item-details">
+                        <h3>Masala Dosa</h3>
+                        <p>Tasty dosa enriched with flavours</p>
+                        <span class="price">$9.99</span>
+                        <button class="add-to-cart" data-id="7" data-name="Chicken Tikka" data-price="9.99">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://www.indianhealthyrecipe.com/wp-content/uploads/2024/01/tandoori_paneer_tikka_restaurant_style.jpg" alt="Paneer Tikka">
+                    <div class="item-details">
+                        <h3>Paneer Tikka</h3>
+                        <p>Grilled paneer marinated with spices</p>
+                        <span class="price">$8.99</span>
+                        <button class="add-to-cart" data-id="8" data-name="Paneer Tikka" data-price="8.99">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://recipes.timesofindia.com/photo/74319630.cms" alt="Pav Bhaji">
+                    <div class="item-details">
+                        <h3>Pav Bhaji</h3>
+                        <p>Burst of flavours</p>
+                        <span class="price">$7.99</span>
+                        <button class="add-to-cart" data-id="9" data-name="Pav Bhaji" data-price="7.99">Add to Cart</button>
+
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://www.funfoodfrolic.com/wp-content/uploads/2020/12/Kadhai-Paneer-Thumbnail.jpg" alt="Karahi Paneer">
+                    <div class="item-details">
+                        <h3>Karahi Paneer</h3>
+                        <p>Full of flavours</p>
+                        <span class="price">$7.99</span>
+                        <button class="add-to-cart" data-id="10" data-name="Karahi Paneer" data-price="7.99">Add to Cart</button>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+<!-- Desserts Menu Section -->
+<section id="desserts-section" class="desserts-section"></section>
+    <h2>Our Desserts</h2>
+    <div class="menu-items">
+        <!-- Blueberry Cheesecake -->
+        <div class="menu-item">
+            <img src="https://www.lifeloveandsugar.com/wp-content/uploads/2021/03/Blueberry-Cheesecake4-1024x1536.jpg" alt="Blueberry Cheesecake">
+            <div class="item-details">
+                <h3>Blueberry Cheesecake</h3>
+                <p class="price">$6.99</p>
+                <button class="add-to-cart" data-id="6" data-name="Blueberry Cheesecake" data-price="6.99">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Lotus Biscoff Cheesecake -->
+        <div class="menu-item">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.afYNecKogAnRksFDCTwO1gHaJB&pid=Api&P=0&h=180" alt="Lotus Biscoff Cheesecake">
+            <div class="item-details">
+                <h3>Lotus Biscoff Cheesecake</h3>
+                <p class="price">$7.49</p>
+                <button class="add-to-cart" data-id="7" data-name="Lotus Biscoff Cheesecake" data-price="7.49">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Oreo Ice-Cream -->
+        <div class="menu-item">
+            <img src="https://midwesternhomelife.com/wp-content/uploads/2022/06/oreo-ice-cream-recipe-6.jpg" alt="Oreo Ice-Cream">
+            <div class="item-details">
+                <h3>Oreo Ice-Cream</h3>
+                <p class="price">$4.99</p>
+                <button class="add-to-cart" data-id="8" data-name="Oreo Ice-Cream" data-price="4.99">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Butterscotch Ice-Cream -->
+        <div class="menu-item">
+            <img src="https://www.theflavorbender.com/wp-content/uploads/2019/07/Butterscotch-Pecan-Ice-Cream-1064-700x1049.jpg" alt="Butterscotch Ice-Cream">
+            <div class="item-details">
+                <h3>Butterscotch Ice-Cream</h3>
+                <p class="price">$5.49</p>
+                <button class="add-to-cart" data-id="9" data-name="Butterscotch Ice-Cream" data-price="5.49">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Gulab Jamun with Vanilla Ice-Cream -->
+        <div class="menu-item">
+            <img src="https://vismaifood.com/storage/app/uploads/public/110/aa9/501/thumb__700_0_0_0_auto.jpg" alt="Gulab Jamun with Vanilla Ice-Cream">
+            <div class="item-details">
+                <h3>Gulab Jamun with Vanilla Ice-Cream</h3>
+                <p class="price">$5.99</p>
+                <button class="add-to-cart" data-id="10" data-name="Gulab Jamun with Vanilla Ice-Cream" data-price="5.99">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Shakes Menu Section (Initially Hidden) -->
+<section id="shakes-section" class="shakes-section">
+    <h2>Our Shakes</h2>
+    <div class="menu-items">
+        <!-- Chocolate Shake -->
+        <div class="menu-item">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.Wdb-hA1iEFEoDrzFdEZB9gHaHa&pid=Api&P=0&h=180" alt="Chocolate Shake">
+            <div class="item-details">
+                <h3>Chocolate Shake</h3>
+                <p class="price">$5.99</p>
+                <button class="add-to-cart" data-id="11" data-name="Chocolate Shake" data-price="5.99">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Butterscotch Shake -->
+        <div class="menu-item">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.LjulPW2qXsrQw43Gn2ydnQHaHa&pid=Api&P=0&h=180" alt="Butterscotch Shake">
+            <div class="item-details">
+                <h3>Butterscotch Shake</h3>
+                <p class="price">$6.49</p>
+                <button class="add-to-cart" data-id="12" data-name="Butterscotch Shake" data-price="6.49">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Strawberry Shake -->
+        <div class="menu-item">
+            <img src="https://bakesbychichi.com/wp-content/uploads/2020/06/DSC_1847.jpg" alt="Strawberry Shake">
+            <div class="item-details">
+                <h3>Strawberry Shake</h3>
+                <p class="price">$5.99</p>
+                <button class="add-to-cart" data-id="13" data-name="Strawberry Shake" data-price="5.99">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Ferrero Rocher Shake -->
+        <div class="menu-item">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.2GL4KC6gIzfrjDkoP5QmngHaJL&pid=Api&P=0&h=180" alt="Ferrero Rocher Shake">
+            <div class="item-details">
+                <h3>Ferrero Rocher Shake</h3>
+                <p class="price">$7.99</p>
+                <button class="add-to-cart" data-id="14" data-name="Ferrero Rocher Shake" data-price="7.99">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Kitkat Shake -->
+        <div class="menu-item">
+            <img src="https://i.pinimg.com/736x/e3/95/d9/e395d9241b1153851eacf800517b338a.jpg" alt="Kitkat Shake">
+            <div class="item-details">
+                <h3>Kitkat Shake</h3>
+                <p class="price">$6.49</p>
+                <button class="add-to-cart" data-id="15" data-name="Kitkat Shake" data-price="6.49">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Oreo Shake -->
+        <div class="menu-item">
+            <img src="https://i.pinimg.com/originals/81/84/44/8184440743e504416d4af2f651ca9b54.jpg" alt="Oreo Shake">
+            <div class="item-details">
+                <h3>Oreo Shake</h3>
+                <p class="price">$6.99</p>
+                <button class="add-to-cart" data-id="16" data-name="Oreo Shake" data-price="6.99">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+        <!-- Contact Us Section -->
+        <section id="contact-section" class="contact-us">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <input type="text" id="user-name" name="name" placeholder="Your Name" required>
+                <input type="email" id="user-email" name="email" placeholder="Your Email" required>
+                <textarea id="user-message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <!-- Cart Popup Section -->
+        <section class="cart-popup" id="cart-popup">
+            <div class="cart-content">
+                <h2>Your Cart</h2>
+                <div id="cart-items"></div>
+                <div class="cart-footer">
+                    <p>Total: $<span id="cart-total-price">0.00</span></p>
+                    <button id="checkout-button">Checkout</button>
+                    <button id="close-cart">Close</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section (Dark Theme) -->
+    <footer>
+        <p>&copy; 2024 Foodies Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

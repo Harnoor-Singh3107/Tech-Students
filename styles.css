@@ -1,0 +1,618 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+/* navigation bar */
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 100px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    position: relative;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: transform 0.2s ease, text-decoration 0.2s ease;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+    transform: scale(1.7);
+    color: #f1c40f; /* Optional: Add a hover color for more effect */
+  }
+  
+/* Header */
+
+  header{
+    height: 80vh;
+    background-color: grey;
+    background-image: url(/Images/Main\ Background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: intro 1s ease-in;
+}
+
+@keyframes intro{
+    from{ opacity: 0.5;}
+    to{opacity: 1;}
+}
+
+.header{
+    background-color: rgb(27, 23, 23);
+    background-image: url("Images/background.jpg");
+    background-size: cover;
+    opacity: 1;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #e9e1e1;
+    font-style: normal;
+    z-index: 1;
+}
+
+.main_logo{
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-size: 6rem;
+    color: rgb(213, 213, 203);
+    font-style: normal;
+    z-index: 1;
+}
+
+.sublogo{
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: rgb(213, 213, 203);
+    font-style: normal;
+    z-index: 1;
+    align-items: center;
+}
+
+
+/* /Premium Options */
+
+.Premium_options {
+    font-family: "Georgia", serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+    background-color: #f5f5f5;
+  }
+
+  .Premium_options h1 {
+    font-size: 2rem;
+    font-style: italic;
+    margin-bottom: 20px;
+    text-align: center;
+    margin: 50px;
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    }
+
+  .options {
+    display: flex;
+    gap: 100px;
+  }
+
+  .option {
+    position: relative;
+    width: 350px;
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .option img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    opacity: 70%;
+    
+  }
+
+  .option:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .option:hover img {
+    transform: scale(1.1);
+  }
+
+  .option-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    
+  }
+
+  .option-text:hover {
+    text-decoration: underline;
+  }
+
+  .option a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+  }
+
+   /* Banner */
+
+    .parent_banner {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    font-family: "Georgia", serif;
+    background-color: #f5f5f5;
+  }
+
+   .parent_banner .banner {
+    position: relative;
+    width: 100%;
+    /* max-width: 900px; */
+    height: 300px;
+    overflow: hidden;
+    /* border-radius: 10px; */
+  }
+
+  .parent_banner .banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: saturate(1);
+    transition: filter 0.5s ease;
+  }
+
+  .parent_banner .banner:hover img {
+    filter: saturate(0.6);
+  }
+
+  .parent_banner .banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  }
+
+  .parent_banner .banner-text h1 {
+    font-size: 2rem;
+    margin: 0;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+
+  .parent_banner .banner-text a {
+    display: inline-block;
+    margin-top: 10px;
+    font-style: italic;
+    color: #f8c247;
+    text-decoration: none;
+    transition: text-decoration 0.3s ease, color 0.3s ease;
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+  }
+
+  .parent_banner .banner-text a:hover {
+    text-decoration: line-through;
+    color: #f3a400;
+  }
+
+  /* The Wall */
+
+  .wall {
+    font-family: "Georgia", serif;
+    margin: 0;
+    padding: 40px;
+    padding-left: 300px;
+    padding-right: 350px;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    overflow: scroll;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column; /* Ensures rows stack vertically */
+    gap: 40px; /* Space between rows */
+    max-width: 1200px;
+    width: 100%;
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space out image and text */
+    gap: 20px; /* Space between image and text */
+  }
+
+  .item:nth-child(even) {
+    flex-direction: row-reverse; /* Alternate image and text positions */
+  }
+
+  .item img {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: border 0.4s ease, box-shadow 0.4s ease, transform 0.4s ease;
+  }
+
+  .item img:hover {
+    border: 3px solid #f8c247; /* Interactive border color */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05); /* Slight zoom */
+  }
+
+  .item p {
+    font-size: 1.2rem;
+    color: #333;
+    font-style: italic;
+    line-height: 1.6;
+    max-width: 400px;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+
+  /* Align text differently depending on position */
+  .item:nth-child(odd) p {
+    text-align: left;
+  }
+
+  .item:nth-child(even) p {
+    text-align: right;
+  }
+
+  /* seasonal menus */
+
+  .seasonal {
+    display: flex;
+    flex-direction: column; /* Stack the rows vertically */
+    gap: 20px; /* Optional: add space between rows */
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Each row with image and text side by side */
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px; /* Space between image and text */
+    width: 100%;
+  }
+
+  .image-card {
+    position: relative;
+    width: calc(33.33% - 10px); /* 3 images per row */
+    aspect-ratio: 1 / 1; /* Square images */
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  .image-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+
+  .image-card:hover img {
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Default dark overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .image-card:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+  }
+
+  /* Cross effect inside overlay */
+  .cross {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    transition: transform 0.6s ease; /* Rotate the cross */
+  }
+
+  .image-card:hover .cross {
+    transform: rotate(360deg); /* Rotate cross only on hover */
+  }
+
+  .cross::before,
+  .cross::after {
+    content: '';
+    position: absolute;
+    background-color: white;
+    border-radius: 2px;
+  }
+
+  .cross::before {
+    width: 100%;
+    height: 10px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  .cross::after {
+    width: 10px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Different overlay colors for odd/even images */
+  .image-card:nth-child(odd) .overlay {
+    background-color: rgba(255, 165, 0, 0.5); /* Orange tint for odd */
+  }
+
+  .image-card:nth-child(even) .overlay {
+    background-color: rgba(0, 128, 255, 0.5); /* Blue tint for even */
+  }
+
+  .text-container {
+    background-color: #333;
+    color: #fff;
+    padding: 40px;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .text-container h1 {
+    font-size: 2.5rem;
+    color: #f8c247;
+  }
+
+  .text-container p {
+    font-size: 1.2rem;
+  }
+
+  @media (max-width: 768px) {
+    .row {
+      flex-direction: column; /* Stack image and text vertically */
+      text-align: center; /* Center text on smaller screens */
+    }}
+
+
+/* Dark Mode Styling for the Newsletter Signup Form */
+.newsletter-signup {
+    background-color: #2e2e2e; /* Dark background */
+    color: #f5f5f5; /* Light text */
+    padding: 40px;
+    /* border-radius: 10px; */
+    width: 100%; /* 90% width of the screen */
+    /* max-width: 600px; */
+    margin: 50px 0px 50px 0px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Soft shadow */
+    align-items: center;
+  }
+  
+  .newsletter-signup h2 {
+    font-size: 28px;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff; /* White text for the header */
+    margin-bottom: 10px;
+  }
+  
+  .newsletter-signup p {
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    color: #b0b0b0; /* Lighter grey for the description */
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for the form elements */
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .signup-form input {
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #444; /* Darker grey border */
+    border-radius: 5px;
+    background-color: #333; /* Dark background for input */
+    color: #f5f5f5; /* Light text inside the input */
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .signup-form input::placeholder {
+    color: #888; /* Light grey placeholder text */
+  }
+  
+  .signup-form input:focus {
+    border-color: #007BFF; /* Blue border on focus */
+    outline: none;
+  }
+  
+  /* Button Styling */
+  .signup-form button {
+    padding: 14px;
+    background-color: #007BFF; /* Blue button */
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .signup-form button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .signup-form button:active {
+    background-color: #004085; /* Even darker blue when clicked */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .newsletter-signup {
+      padding: 25px;
+    }
+  
+    .signup-form input, .signup-form button {
+      max-width: 100%; /* Full width for inputs and button */
+    }
+  }
+  
+
+  /* footer */
+
+  footer{
+    background-color: rgb(0, 0, 0);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i{
+    color:black;
+     opacity: 0.9;
+     font-size: 2em;
+}
+
+.socialIcons a:hover{
+    background-color: rgb(255, 255, 255);
+    transform: scale(1.5);
+}
+
+.footernav{
+    margin: 30px;
+}
+
+.footernav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footernav a{
+    margin: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 1.2em;
+    opacity: 0.8;
+    text-decoration: none;
+
+}
+
+.footernav a:hover{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.8 em;
+    font-weight: 50;
+
+}
+
+.footerbottom{
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-size: 0.9em;
+    text-align: center;
+}

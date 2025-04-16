@@ -50,7 +50,7 @@
   header{
     height: 80vh;
     background-color: grey;
-    background-image: url(/Images/Main\ Background.jpg);
+    background-image: url(Images/Main\ Background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

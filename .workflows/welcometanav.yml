@@ -1,0 +1,80 @@
+project:
+  name: Meal Magic Food Ordering
+  type: Web Application
+  description: >
+    Meal Magic is an intuitive and engaging online food ordering platform that allows users to browse menus, customize orders, and complete payments seamlessly. The platform connects users with top restaurants and home chefs, offering a modern experience with fast delivery, secure payment options, and excellent customer service.
+
+branding:
+  palette:
+    - name: White
+      hex: "#FFFFFF"
+      usage: "Backgrounds, negative space, primary contrast"
+    - name: Charcoal Gray
+      hex: "#2D2D2D"
+      usage: "Primary text, headers, navigation bar"
+    - name: Deep Red
+      hex: "#911C18"
+      usage: "Highlights, buttons, accents"
+    - name: Light Gray
+      hex: "#D7D7D7"
+      usage: "Secondary backgrounds, borders, subtle separators"
+    - name: Mustard Gold
+      hex: "#CB930E"
+      usage: "Call-to-action, icons, highlights"
+
+structure:
+  frontend:
+    - index.html
+    - Home1.html
+    - Menu.html
+    - Reservation.html
+    - cart.html
+    - assets/
+      - images/
+      - styles/
+    - scripts/
+      - script.js
+      - object.js
+  backend: []
+  docs:
+    - Food-Ordering-Site.docx
+
+features:
+  core:
+    - User registration and profile management
+    - Browse food categories and menus
+    - Add and customize items in cart
+    - Seamless multi-payment options (Credit/Debit Card, PayPal, Cash on Delivery, QR Code)
+    - Real-time order tracking with estimated delivery times
+    - Save favourite orders for quick reordering
+    - Personalized recommendations based on order history
+    - Responsive and visually appealing user interface
+  advanced:
+    - Loyalty program for returning customers
+    - Group ordering and split payments
+    - Flexible delivery/pickup scheduling
+    - Adaptive feedback and rating system
+    - Voice and chatbot ordering
+    - AR/VR dish previews and restaurant tours
+    - QR code table ordering for dine-in
+    - Dietary filters (vegetarian, vegan, gluten-free, etc.)
+    - Instant notifications and order alerts
+    - Restaurant dashboard for menu and order management
+
+ui:
+  typography:
+    headings: "Bold, modern sans-serif"
+    body: "Clean, readable sans-serif"
+  imagery: "High-quality food images, appetizing visuals"
+  tone: "Warm, inviting, modern"
+  slogans:
+    - "From our Kitchen to your Table - Simply Delicious"
+    - "Your Next Favorite Dining Experience Starts Here"
+    - "Where Experiences are Crafted"
+    - "Dining Redefined - Join Us for an Unforgettable Experience"
+
+contact:
+  support_email: "support@mealmagic.com"
+  copyright: "© 2024; Designed by Harnoor"
+
+

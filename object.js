@@ -46,8 +46,9 @@
 
 //     if (!cart[itemName]) {
 //       cart[itemName] = { price: itemPrice, quantity: 1 };
-//     } else {
-//       cart[itemName].quantity += 1;
+//     } 
+//     else {
+//      cart[itemName].quantity += 1;
 //     }
 
 //     updateCartUI();
